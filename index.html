@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Vida+ Bem-Estar - Inspirado em Unimed</title>
   <style>
-    :root { /* Definindo variáveis de cor globais */
-      --unimed-green: #00995D; /* Tom de verde similar ao da Unimed */
-      --unimed-orange: #F78F1E; /* Tom de laranja similar */
+    :root {
+      --unimed-green: #00995D; 
+      --unimed-orange: #F78F1E; 
       --unimed-dark-gray: #333333;
       --unimed-light-gray: #f0f0f0;
       --unimed-text-color: #4A4A4A;
@@ -22,13 +22,13 @@
     body, html {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif; /* Mude para uma fonte mais próxima se souber (ex: 'Helvetica Neue', Helvetica, Arial, sans-serif) */
+      font-family: 'Arial', sans-serif;
       color: var(--unimed-text-color);
       scroll-behavior: smooth;
-      background-color: var(--white); /* Fundo geral branco */
+      background-color: var(--white); 
     }
 
-    /* Estilos para a Barra de Utilidades Superior */
+  
     .top-utility-bar {
       background-color: var(--unimed-light-gray);
       padding: 8px 0;
@@ -46,7 +46,7 @@
     }
     
     .top-logo img {
-        display: block; /* Para evitar espaço extra abaixo da imagem */
+        display: block; 
     }
 
     .top-utility-nav a {
@@ -59,7 +59,7 @@
       color: var(--unimed-green);
     }
 
-    /* Header Principal */
+ 
     .main-header {
       background-color: var(--white);
       border-bottom: 1px solid var(--border-color);
@@ -69,11 +69,11 @@
       z-index: 1000;
     }
     
-    .main-header .topbar { /* .topbar é o container dentro do .main-header */
+    .main-header .topbar { 
       max-width: 1200px;
       margin: auto;
       display: flex;
-      justify-content: space-between; /* Alterado para espaçar logo e nav */
+      justify-content: space-between; 
       align-items: center;
       padding: 0 15px;
     }
@@ -82,18 +82,18 @@
       font-size: 28px;
       color: var(--unimed-green);
       font-weight: bold;
-      text-decoration: none; /* Caso seja um link */
+      text-decoration: none; 
     }
 
     .main-header nav {
       display: flex;
       flex-wrap: wrap;
-      align-items: center; /* Alinha verticalmente os itens da nav */
-      justify-content: flex-end; /* Alinha itens da nav à direita */
-      gap: 10px; /* Espaçamento entre itens da nav */
+      align-items: center; 
+      justify-content: flex-end; 
+      gap: 10px; 
     }
 
-    .main-header nav a, .main-header .nav-button, .main-header .nav-button-orange { /* Estilo dos links e botões da navegação principal */
+    .main-header nav a, .main-header .nav-button, .main-header .nav-button-orange {
       text-decoration: none;
       font-weight: bold;
       font-size: 15px;
@@ -114,13 +114,13 @@
       background-color: transparent;
     }
 
-    /* Botão Laranja (Ex: Área do Cliente) */
+   
     .nav-button-orange {
-      background-color: var(--unimed-orange) !important; /* Prioridade */
+      background-color: var(--unimed-orange) !important;
       color: var(--white) !important;
       padding: 10px 20px !important;
-      border: none !important; /* Remove bordas */
-      border-bottom: 2px solid transparent !important; /* Sobrescreve borda de link */
+      border: none !important; 
+      border-bottom: 2px solid transparent !important; 
     }
     .nav-button-orange:hover {
       background-color: #e67e22 !important;
@@ -128,13 +128,13 @@
       border-bottom: 2px solid transparent !important;
     }
 
-    /* Botões Verdes (.nav-button) */
+    
     .nav-button {
-      background-color: var(--unimed-green) !important; /* Prioridade */
+      background-color: var(--unimed-green) !important; 
       color: var(--white) !important;
-      border: none !important; /* Remove bordas */
+      border: none !important;
       cursor: pointer;
-      border-bottom: 2px solid transparent !important; /* Sobrescreve borda de link */
+      border-bottom: 2px solid transparent !important; 
     }
     .nav-button:hover {
       background-color: #007A4D !important;
@@ -144,49 +144,49 @@
     
     main {
       flex: 1;
-      /* padding-top: 20px; */ /* Removido, o sticky header já cuida do espaço */
+    
     }
 
-    /* Hero Section Estilo Unimed */
+   
     .hero-section-unimed {
       position: relative;
-      background-color: #e9eff1; /* Cor de fundo similar ao da Unimed */
-      padding: 50px 0; /* Reduzido padding vertical */
+      background-color: #e9eff1;
+      padding: 50px 0; 
       overflow: hidden;
-      min-height: 400px; /* Reduzido min-height */
+      min-height: 400px; 
       display: flex;
       align-items: center;
     }
 
    
-    .hero-content { /* Container para o conteúdo do hero */
+    .hero-content { 
       position: relative;
       z-index: 2;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px; /* Reduzido gap */
-      max-width: 1100px; /* Largura do conteúdo */
+      gap: 20px; 
+      max-width: 1100px; 
       margin: 0 auto;
       padding: 0 15px;
     }
 
     .hero-text-content {
-      flex-basis: 55%; /* Mais espaço para o texto */
+      flex-basis: 55%; 
       color: var(--unimed-text-color);
     }
 
     .hero-text-content h2 {
-      font-size: 2.2em; /* Ajustado tamanho */
-      color: var(--unimed-dark-gray); /* Cor mais escura para o título */
+      font-size: 2.2em; 
+      color: var(--unimed-dark-gray); 
       margin-bottom: 15px;
       line-height: 1.2;
       text-align: left;
-      font-weight: bold; /* Título mais forte */
+      font-weight: bold; 
     }
 
     .hero-text-content p {
-      font-size: 1.0em; /* Ajustado tamanho */
+      font-size: 1.0em; 
       margin-bottom: 25px;
       text-align: left;
       line-height: 1.5;
@@ -202,39 +202,39 @@
       font-weight: bold;
       border: none;
       cursor: pointer;
-      display: inline-block; /* Para que o padding funcione bem */
+      display: inline-block;
     }
     .cta-button.hero-cta:hover {
       background-color: #007A4D;
     }
 
     .hero-image-elements {
-      flex-basis: 40%; /* Menos espaço para imagem */
-      text-align: center; /* Centraliza a imagem se for menor */
+      flex-basis: 40%; 
+      text-align: center; 
     }
     .hero-image-elements img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px; /* Pequeno arredondamento */
+      border-radius: 8px; 
     }
 
     .hero-pagination {
       position: absolute;
-      bottom: 15px; /* Ajustado */
+      bottom: 15px; 
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
       color: var(--unimed-text-color);
       font-size: 0.9em;
-      background-color: rgba(255,255,255,0.5); /* Fundo semi-transparente */
+      background-color: rgba(255,255,255,0.5); 
       padding: 5px 10px;
       border-radius: 3px;
     }
     .hero-pagination .slider-line {
-      margin: 0 8px; /* Ajustado */
+      margin: 0 8px; 
     }
 
-    /* Estilos Gerais para seções importadas */
+   
     .container {
       max-width: 1100px;
       margin-left: auto;
@@ -244,31 +244,31 @@
     }
 
     .section-padding {
-      padding-top: 50px; /* Aumentado padding */
+      padding-top: 50px; 
       padding-bottom: 50px;
     }
     
     section h2 {
         text-align: center;
-        margin-bottom: 35px; /* Aumentado margin */
-        font-size: 2.2em; /* Aumentado font-size */
-        color: var(--unimed-dark-gray); /* Cor consistente para títulos de seção */
+        margin-bottom: 35px; 
+        font-size: 2.2em;
+        color: var(--unimed-dark-gray); 
         font-weight: bold;
     }
     section h3 {
-        margin-top: 25px; /* Aumentado margin */
+        margin-top: 25px; 
         margin-bottom: 15px;
-        font-size: 1.6em; /* Aumentado font-size */
-        color: var(--unimed-green); /* Cor verde para subtítulos */
+        font-size: 1.6em; 
+        color: var(--unimed-green); 
         font-weight: bold;
     }
     article p, .servico-detalhe p, .dados-contato p, .formulario-pre-agendamento p, .opcao p {
-        line-height: 1.7; /* Melhorado line-height */
-        margin-bottom: 18px; /* Aumentado margin */
-        font-size: 1em; /* Tamanho de fonte padrão */
+        line-height: 1.7; 
+        margin-bottom: 18px; 
+        font-size: 1em; 
     }
 
-    .cta-button { /* Estilo base para botões de ação */
+    .cta-button { 
         display: inline-block;
         background-color: var(--unimed-green);
         color: var(--white) !important;
@@ -285,32 +285,32 @@
         background-color: #007A4D;
     }
 
-    /* Grid para serviços preview */
+    
     .servicos-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px; /* Aumentado gap */
+        gap: 25px; 
         text-align: center;
     }
     .servico-item {
         background-color: var(--white);
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.07); /* Sombra suave */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.07); 
         transition: transform 0.3s ease;
     }
     .servico-item:hover {
-        transform: translateY(-5px); /* Efeito de levantar no hover */
+        transform: translateY(-5px); 
     }
     .servico-item img.servico-icon {
-        max-width: 70px; /* Ajustado */
+        max-width: 70px;
         margin-bottom: 15px;
     }
     .servico-item h3 {
-        font-size: 1.3em; /* Ajustado */
+        font-size: 1.3em; 
     }
 
-    /* Team profiles */
+    
     .perfil-medico {
         margin-bottom: 30px;
         padding: 20px;
@@ -322,7 +322,7 @@
     .perfil-medico img.perfil-foto {
         max-width: 120px;
         border-radius: 50%;
-        margin: 0 auto 15px auto; /* Centralizado */
+        margin: 0 auto 15px auto; 
         display: block;
         border: 3px solid var(--unimed-light-gray);
     }
@@ -341,7 +341,7 @@
         font-size: 0.95em;
     }
 
-    /* Forms styling (melhorado) */
+    
     form div {
         margin-bottom: 18px;
     }
@@ -359,7 +359,7 @@
     form textarea,
     form select {
         width: 100%;
-        padding: 12px; /* Aumentado padding */
+        padding: 12px; 
         border: 1px solid var(--border-color);
         border-radius: 5px;
         font-size: 1em;
@@ -386,23 +386,23 @@
     }
     .dados-contato, .formulario-contato {
         flex: 1;
-        min-width: 300px; /* Ajustado para melhor quebra */
+        min-width: 300px; 
     }
     .mapa-container {
         margin-top:30px;
     }
     .mapa-container iframe {
-        border-radius: 8px; /* Arredondado */
+        border-radius: 8px; 
     }
 
     .opcoes-agendamento {
-        display: grid; /* Usando grid para melhor alinhamento */
+        display: grid; 
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
         margin-bottom: 30px;
     }
     .opcoes-agendamento .opcao {
-        flex: 1; /* Mantido para compatibilidade se não for grid */
+        flex: 1; 
         min-width: 250px;
         padding: 20px;
         background-color: var(--unimed-light-gray);
@@ -410,23 +410,23 @@
         border-radius: 8px;
     }
     .opcoes-agendamento .opcao h3 {
-        margin-top: 0; /* Remove margin-top para h3 dentro de .opcao */
+        margin-top: 0; 
     }
     
-    /* Footer */
+  
     footer {
       text-align: center;
-      padding: 30px 20px; /* Aumentado padding */
-      background-color: var(--unimed-dark-gray); /* Fundo escuro para o footer */
-      color: var(--unimed-light-gray); /* Texto claro */
+      padding: 30px 20px;
+      background-color: var(--unimed-dark-gray); 
+      color: var(--unimed-light-gray); 
       font-size: 0.9em;
       line-height: 1.6;
     }
     footer p {
-        margin-bottom: 8px; /* Espaçamento entre parágrafos no footer */
+        margin-bottom: 8px; 
     }
     footer a {
-        color: var(--white); /* Links brancos no footer */
+        color: var(--white); 
         text-decoration: underline;
     }
     footer a:hover {
@@ -780,27 +780,26 @@
         });
     });
     
-    // Atualiza active nav link no scroll
+  
     const sections = document.querySelectorAll('main section[id]');
     window.addEventListener('scroll', () => {
         let currentSectionId = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - mainHeaderHeight - 50) { // Adicionado um pequeno offset de 50px
+            if (pageYOffset >= sectionTop - mainHeaderHeight - 50) { 
                 currentSectionId = section.getAttribute('id');
             }
         });
 
         mainHeaderNavLinks.forEach(a => {
             a.classList.remove('active');
-            // Verifica se o href do link (removendo o '#') corresponde ao ID da seção atual
+            
             if (a.getAttribute('href').substring(1) === currentSectionId) {
                 a.classList.add('active');
             }
         });
         
-        // Caso especial para o topo da página ou quando nenhuma seção está "ativa"
-        // Define "Início" como ativo se estiver perto do topo e nenhuma outra seção estiver marcada
+     
         if (!currentSectionId && pageYOffset < (sections[0] ? sections[0].offsetTop - mainHeaderHeight - 50 : 300) ) {
              const inicioLink = document.querySelector('.main-header nav a[href="#inicio"]');
              if(inicioLink) {
